@@ -12,19 +12,18 @@ body {
   text-align: right;
 }
 
-.header-img {
+.header__img {
   width: 100%;
 }
 
-.header .more-info {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-
- .header { text-align: center;
- }
-
+  .header {
+    text-align: center;
+  }
 }
 
 .main {
@@ -33,14 +32,13 @@ body {
   margin: 0 auto 0;
 }
 
-.task,
-.task-label {
+.new-task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.new-task__wrapper {
   display: flex;
 }
 
@@ -53,18 +51,18 @@ body {
 .incomplete-tasks-item,
 .completed-tasks-item,
 .tasks-title {
-  list-style:none;
+  list-style: none;
 }
 
 .checkbox,
-.task,
-.add-btn,
+.task-input,
+.new-task__btn,
 .edit,
 .delete {
   outline: none;
 }
 
-.add-btn,
+.new-task__btn,
 .edit,
 .delete {
   background: none;
@@ -76,7 +74,7 @@ body {
   cursor: pointer;
 }
 
-.add-btn:hover,
+.new-task__btn:hover,
 .edit:hover,
 .delete:hover {
   color: #3a3a3a;
@@ -84,7 +82,7 @@ body {
 
 /* Heading */
 .tasks-title,
-.new-task {
+.new-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -94,7 +92,7 @@ body {
   text-transform: uppercase;
 }
 
-.task {
+.task-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -107,12 +105,12 @@ body {
   color: #888;
 }
 
-.task:focus {
+.task-input:focus {
   color: #333;
 }
 
 /* New Task */
-.new-task {
+.new-task__label {
   display: block;
   margin: 0 0 20px;
 }
@@ -121,7 +119,7 @@ body {
   width: 318px;
 }
 
-.add-btn:hover {
+.new-task__btn:hover {
   color: #0fc57c;
 }
 
@@ -137,16 +135,11 @@ body {
   align-items: center;
 }
 
-.incomplete-tasks-item > *,
-.completed-tasks-item > *  {
-  vertical-align: middle;
-}
-
 .checkbox {
   margin: 0 10px;
 }
 
-.task,
+/* .task, */
 .task-label {
   padding-left: 10px;
   box-sizing: border-box;
@@ -154,9 +147,9 @@ body {
   width: 226px;
 }
 
-.incomplete-tasks-item >  .task,
-.completed-tasks-item >  .task {
-  width: 226px
+.incomplete-tasks-item > .task-input,
+.completed-tasks-item > .task-input {
+  width: 226px;
 }
 
 .delete:hover {
@@ -180,16 +173,16 @@ body {
 }
 
 /* Edit Task */
-.incomplete-tasks-item .task,
-.completed-tasks-item .task {
+.incomplete-tasks-item .task-input,
+.completed-tasks-item .task-input {
   display: none;
 }
 
-.edit .task {
+.edit-mode .task-input {
   display: inline-block;
   width: 224px;
 }
 
-.edit .task-label {
+.edit-mode .task-label {
   display: none;
 }
