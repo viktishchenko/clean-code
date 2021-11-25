@@ -4,46 +4,58 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header-img {
   width: 100%;
 }
+
 .header .more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
+
+ .header { text-align: center;
+ }
+
 }
-}
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task,
 .task-label {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .task-row-wrapper {
   display: flex;
 }
+
 #incomplete-tasks,
 #completed-tasks {
   margin:0;
   padding: 0px;
 }
+
 .incomplete-tasks-item,
-.completed-tasks-item, .tasks-title {
+.completed-tasks-item,
+.tasks-title {
   list-style:none;
 }
+
 .checkbox,
 .task,
 .add-btn,
@@ -51,6 +63,7 @@ body {
 .delete{
   outline:none;
 }
+
 .add-btn,
 .edit,
 .delete {
@@ -62,11 +75,13 @@ body {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .add-btn:hover,
 .edit:hover,
 .delete:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .tasks-title,
 .new-task {
@@ -78,6 +93,7 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
+
 .task {
   margin: 0;
   font-size: 18px;
@@ -90,6 +106,7 @@ body {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .task:focus {
   color: #333;
 }
@@ -99,9 +116,11 @@ body {
   display: block;
   margin: 0 0 20px;
 }
+
 #new-task {
   width: 318px;
 }
+
 .add-btn:hover {
   color: #0fc57c;
 }
@@ -117,6 +136,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .incomplete-tasks-item > *,
 .completed-tasks-item > *  {
   vertical-align: middle;
@@ -125,6 +145,7 @@ body {
 .checkbox {
   margin: 0 10px;
 }
+
 .task,
 .task-label {
   padding-left: 10px;
@@ -132,18 +153,22 @@ body {
   font-size: 18px;
   width: 226px;
 }
+
 .incomplete-tasks-item >  .task,
 .completed-tasks-item >  .task {
   width: 226px
 }
+
 .delete:hover {
   color: #cf2323;
 }
+
 .delete-btn-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .delete-btn-img:hover {
   transform: rotateZ(0);
 }
