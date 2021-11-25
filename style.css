@@ -44,7 +44,8 @@ body {
   display: flex;
 }
 
-#incomplete-tasks, #completed-tasks {
+#incomplete-tasks,
+#completed-tasks {
   margin: 0;
   padding: 0px;
 }
@@ -75,7 +76,9 @@ body {
   cursor: pointer;
 }
 
-.add-btn:hover, .edit:hover, .delete:hover {
+.add-btn:hover,
+.edit:hover,
+.delete:hover {
   color: #3a3a3a;
 }
 
@@ -134,7 +137,8 @@ body {
   align-items: center;
 }
 
-.incomplete-tasks-item > *, .completed-tasks-item > *  {
+.incomplete-tasks-item > *,
+.completed-tasks-item > *  {
   vertical-align: middle;
 }
 
@@ -150,7 +154,8 @@ body {
   width: 226px;
 }
 
-.incomplete-tasks-item >  .task, .completed-tasks-item >  .task {
+.incomplete-tasks-item >  .task,
+.completed-tasks-item >  .task {
   width: 226px
 }
 
@@ -175,7 +180,8 @@ body {
 }
 
 /* Edit Task */
-.incomplete-tasks-item .task, .completed-tasks-item .task {
+.incomplete-tasks-item .task,
+.completed-tasks-item .task {
   display: none;
 }
 
